@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pragmatic-machine-learning"
+version = "0.1.0"
+description = "Slides for Pragmatic Machine Learning talk at OpenFest 2022"
+authors = ["Stefan Dobrev <stefan.dobrev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "pragmatic_machine_learning"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+jupyterlab = "^3.4.7"
+lightning-flash = {extras = ["image"], version = "^0.8.0"}
+fiftyone = "^0.17.2"
+kaleido = "0.2.1"
+scipy = "^1.9.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
